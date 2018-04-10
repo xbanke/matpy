@@ -74,7 +74,7 @@ class MatPy(object):
 
     @path.validator
     def validate_path(self, attribute, value):
-        self.addpath_(os.path.dirname(os.path.abspath(__file__)))
+        # self.addpath_(os.path.dirname(os.path.abspath(__file__)))
         if value is not None:
             self.addpath_(value)
 
